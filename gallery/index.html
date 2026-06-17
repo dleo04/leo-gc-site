@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang=en-us>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <title>Project Gallery | Leo General Contracting LLC | Montgomery County, MD</title>
+    <meta name=description content="Browse our project gallery — painting, drywall, bathroom & kitchen refresh, deck & carpentry, tile work, and general home repairs across Potomac, Rockville, Bethesda & Montgomery County, MD. MHIC #168342.">
+    <meta property="og:title" content="Project Gallery | Leo General Contracting LLC">
+    <meta property="og:description" content="See our recent home improvement projects across Montgomery County, MD. Quality craftsmanship that speaks for itself.">
+    <meta property="og:type" content="website">
+    <link rel=preconnect href=https://fonts.googleapis.com>
+    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel=stylesheet>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&icon_names=arrow_forward,arrow_upward,build,calendar_month,calendar_today,call,carpenter,check_circle,chevron_left,chevron_right,close,construction,countertops,deck,expand_less,expand_more,floor,format_paint,handyman,home,home_repair_service,imagesmode,location_on,mail,menu,phone_in_talk,plumbing,request_quote,schedule,verified_user,water_damage&display=swap" rel=stylesheet>
+    <link rel=stylesheet href="../css/tailwind.css">
+    <style>
+        body { font-family: work sans, sans-serif }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+        .material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
+        .placeholder-bg { background-color: #141414; background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(196,145,48,0.08) 35px, rgba(196,145,48,0.08) 36px); }
+        .filter-btn.active { background-color: rgb(196,145,48); color: #fff; border-color: rgb(196,145,48); }
+        .gallery-item { transition: opacity 0.3s, transform 0.3s; }
+        .gallery-item.hidden-item { display: none; }
+    </style>
+</head>
+<body class="bg-background-light text-[#111318] antialiased">
+    <div id="site-header"></div>
+
+    <main>
+        <!-- HERO -->
+        <section class="bg-primary/5 py-16 md:py-20">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
+                <span class="inline-flex items-center gap-2 bg-primary/10 text-primary font-bold text-sm uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"><span class="material-symbols-outlined text-sm">imagesmode</span> Portfolio</span>
+                <h1 class="text-[#111318] text-4xl md:text-5xl font-black leading-[1.1] tracking-tight mb-4">Our Work</h1>
+                <p class="text-[#616f89] text-lg max-w-2xl mx-auto">Quality craftsmanship across Montgomery County. Browse real projects from real homeowners — every photo represents our commitment to expert results.</p>
+            </div>
+        </section>
+
+        <!-- FILTER + GALLERY -->
+        <section class="max-w-[1280px] mx-auto px-6 lg:px-10 py-16">
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="filter-btn active rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] transition-all hover:border-primary hover:text-primary" data-filter="all">All</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="painting">Painting</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="drywall">Drywall</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="bathroom-kitchen">Bathroom & Kitchen</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="deck-carpentry">Deck & Carpentry</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="tile">Tile Work</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="repairs">General Repairs</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Painting (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="0" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Interior Painting — Living Room</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="1" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Exterior Siding Repaint</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="2" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Cabinet Painting — Kitchen</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                </button>
+                <!-- Drywall (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="3" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Basement Drywall Finish</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="4" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Water Damage Repair</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="5" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Skim Coat & Texture Match</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                </button>
+                <!-- Bathroom & Kitchen (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="6" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Vanity & Mirror Upgrade</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="7" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Kitchen Backsplash Install</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="8" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Fixture & Hardware Refresh</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                </button>
+                <!-- Deck & Carpentry (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="9" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">New Composite Deck Build</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="10" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Crown Molding Installation</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="11" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Deck Staining & Sealing</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                </button>
+                <!-- Tile Work (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="12" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Bathroom Floor Tile</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="13" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Shower Surround Install</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="14" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Herringbone Backsplash</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                </button>
+                <!-- General Repairs (3) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="15" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Door Replacement</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="16" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Window Weatherproofing</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="17" aria-label="View project">
+                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Railing & Fixture Repair</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div id="gallery-lightbox" class="fixed inset-0 z-[100] hidden bg-black/90 items-center justify-center" onclick="closeGalleryLightbox(event)">
+            <button class="absolute top-6 right-6 text-white hover:text-primary transition-colors z-10" onclick="closeGalleryLightbox(event)" aria-label="Close">
+                <span class="material-symbols-outlined text-4xl">close</span>
+            </button>
+            <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors z-10" onclick="event.stopPropagation();prevGalleryImage()" aria-label="Previous">
+                <span class="material-symbols-outlined text-4xl">chevron_left</span>
+            </button>
+            <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-primary transition-colors z-10" onclick="event.stopPropagation();nextGalleryImage()" aria-label="Next">
+                <span class="material-symbols-outlined text-4xl">chevron_right</span>
+            </button>
+            <div class="max-w-5xl max-h-[90vh] mx-4" onclick="event.stopPropagation()">
+                <div id="gallery-lightbox-img" class="w-full placeholder-bg rounded-lg" style="width:800px;max-width:90vw;height:600px;max-height:70vh"></div>
+                <p id="gallery-lightbox-caption" class="text-white text-center mt-4 text-sm"></p>
+            </div>
+        </div>
+
+        <script>
+        (function() {
+            var items = document.querySelectorAll('.gallery-item');
+            var captions = [];
+            items.forEach(function(el) {
+                captions.push(el.querySelector('.text-white.text-sm').textContent);
+            });
+
+            var currentIndex = 0;
+            var visibleItems = Array.from(items);
+
+            // Filter
+            document.querySelectorAll('.filter-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+                    this.classList.add('active');
+                    var filter = this.getAttribute('data-filter');
+                    items.forEach(function(el) {
+                        if (filter === 'all' || el.getAttribute('data-category') === filter) {
+                            el.classList.remove('hidden-item');
+                        } else {
+                            el.classList.add('hidden-item');
+                        }
+                    });
+                    visibleItems = Array.from(items).filter(function(el) { return !el.classList.contains('hidden-item'); });
+                });
+            });
+
+            // Lightbox
+            items.forEach(function(el) {
+                el.addEventListener('click', function() {
+                    var idx = visibleItems.indexOf(el);
+                    if (idx === -1) idx = 0;
+                    currentIndex = idx;
+                    showLightbox();
+                });
+            });
+
+            window.closeGalleryLightbox = function(e) {
+                if (e) e.stopPropagation();
+                document.getElementById('gallery-lightbox').classList.add('hidden');
+                document.getElementById('gallery-lightbox').classList.remove('flex');
+                document.body.style.overflow = '';
+            };
+            window.nextGalleryImage = function() {
+                currentIndex = (currentIndex + 1) % visibleItems.length;
+                updateLightbox();
+            };
+            window.prevGalleryImage = function() {
+                currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+                updateLightbox();
+            };
+
+            function showLightbox() {
+                updateLightbox();
+                document.getElementById('gallery-lightbox').classList.remove('hidden');
+                document.getElementById('gallery-lightbox').classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }
+            function updateLightbox() {
+                var el = visibleItems[currentIndex];
+                var caption = el ? el.querySelector('.text-white.text-sm').textContent : '';
+                document.getElementById('gallery-lightbox-caption').textContent = caption;
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (document.getElementById('gallery-lightbox').classList.contains('hidden')) return;
+                if (e.key === 'Escape') closeGalleryLightbox();
+                if (e.key === 'ArrowRight') nextGalleryImage();
+                if (e.key === 'ArrowLeft') prevGalleryImage();
+            });
+        })();
+        </script>
+
+        <!-- CTA -->
+        <section class="bg-primary py-16">
+            <div class="max-w-[1280px] mx-auto px-6 lg:px-10 text-center">
+                <h2 class="text-white text-3xl md:text-4xl font-black mb-4">Like What You See?</h2>
+                <p class="text-white/80 text-lg max-w-xl mx-auto mb-8">Let us bring the same quality craftsmanship to your home. Get a free estimate — licensed, bonded & insured, MHIC #168342.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="../contact/" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-white text-primary text-base font-bold hover:bg-gray-100 transition-colors"><span class="material-symbols-outlined">calendar_today</span> Get Your Free Estimate</a>
+                    <a href="tel:3016138066" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 border-2 border-white text-white text-base font-bold hover:bg-white/10 transition-colors"><span class="material-symbols-outlined">call</span> (301) 613-8066</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script>window.LGC_BASE = '../';</script>
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

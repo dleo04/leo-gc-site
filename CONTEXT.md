@@ -11,12 +11,15 @@
 - Font: Work Sans
 
 ## Services
-1. Interior & Exterior Painting
-2. Drywall Installation & Repair
-3. Bathroom & Kitchen Refresh
-4. Deck & Carpentry
-5. Tile Work
-6. General Home Repairs
+1. Handyman Services
+2. Realtor & Listing Prep Services
+3. General Home Repairs
+4. Interior & Exterior Painting
+5. Drywall Installation & Repair
+6. Bathroom & Kitchen Refresh
+7. Deck & Carpentry
+8. Tile Work
+9. Landscaping & Yard Maintenance
 
 ## Site Structure
 - index.html — Homepage
@@ -24,7 +27,8 @@
 - components/footer.html — Shared footer (loaded via components.js)
 - js/components.js — Loads header/footer into every page using {{BASE}} path system
 - css/tailwind.css — All site styles
-- services/ — 6 service pages + service-template.html
+- services/ — 9 service pages + service-template.html (handyman-services.html, realtor-listing-prep.html, landscaping-yard-maintenance.html + 6 originals)
+- locations/ — 7 location pages (potomac.html, rockville.html, north-bethesda.html, bethesda.html, gaithersburg.html, silver-spring.html, chevy-chase.html)
 - gallery/index.html — Gallery page
 - contact/index.html — Contact page
 - images/ — Logo and all site images
@@ -36,16 +40,13 @@ Header and footer are in components/ folder and injected via fetch().
 
 ## Status
 - Homepage: Complete
-- Service pages: All 6 complete
+- Service pages: All 9 complete
 - Gallery page: Complete (placeholder images)
 - Contact page: Complete
-- Footer: Needs redesign (see next task)
-- Social media links: Placeholder only — not yet active
+- Footer: Redesigned with dark #141414 background
 - Real photos: Not yet added
 
 ## Next Steps
-- Redesign footer with dark background matching brand
-- Add location/service area pages
 - Replace placeholder images with real job photos when available
 - Connect contact form to email service
 - Deploy to leogeneral.com when ready

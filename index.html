@@ -67,7 +67,7 @@
     <link rel=preconnect href=https://fonts.googleapis.com>
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;900&display=swap" rel=stylesheet>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&icon_names=arrow_forward,arrow_upward,build,calendar_month,calendar_today,call,carpenter,check_circle,chevron_left,chevron_right,close,construction,countertops,deck,expand_less,expand_more,floor,format_paint,handyman,home,home_repair_service,imagesmode,location_on,mail,menu,phone_in_talk,plumbing,request_quote,schedule,verified_user,water_damage&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0..1,0&icon_names=arrow_forward,arrow_upward,build,calendar_month,calendar_today,call,carpenter,check_circle,chevron_left,chevron_right,close,construction,countertops,deck,expand_less,expand_more,floor,format_paint,groups,handyman,home,home_repair_service,imagesmode,local_florist,location_on,mail,menu,phone_in_talk,plumbing,request_quote,schedule,verified_user,water_damage&display=swap"
         rel=stylesheet>
     <link rel=stylesheet href=css/tailwind.css>
     <style>
@@ -228,119 +228,88 @@
             })()
         </script>
 
-        <!-- SERVICES SLIDER -->
+        <!-- SERVICES GRID -->
         <section id=services class="max-w-[1280px] mx-auto px-6 lg:px-10 py-24">
             <div class="text-center mb-12">
                 <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block">What We Do</span>
                 <h2 class="text-[#111318] text-3xl md:text-4xl font-black">Full-Service Home Improvement in Montgomery County</h2>
                 <p class="mt-4 text-[#616f89] max-w-2xl mx-auto">Leo General Contracting provides expert craftsmanship for homes throughout Montgomery County. Licensed, bonded, and insured — MHIC #168342.</p>
             </div>
-            <div class=relative>
-                <div id=services-slider class="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 scrollbar-hide">
-                    <a href="services/interior-exterior-painting.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg is-active" data-index=0>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">format_paint</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">Interior & Exterior Painting</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">Professional painting services for every room and exterior surface. Clean lines, lasting finish, meticulous prep work.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                    <a href="services/drywall-installation-repair.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg" data-index=1>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">construction</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">Drywall Installation & Repair</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">New drywall hanging, patching, skim coating, and seamless finishing for walls and ceilings.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                    <a href="services/bathroom-kitchen-refresh.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg" data-index=2>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">countertops</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">Bathroom & Kitchen Refresh</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">Update your kitchen or bathroom with new fixtures, vanities, backsplashes, and finish work without a full remodel.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                    <a href="services/deck-carpentry.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg" data-index=3>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">deck</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">Deck & Carpentry</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">Custom deck builds, repairs, staining, and finish carpentry including trim, molding, and built-ins.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                    <a href="services/tile-work.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg" data-index=4>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">floor</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">Tile Work</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">Floor tile, wall tile, backsplashes, and shower surrounds. Precise cuts and professional grouting.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                    <a href="services/general-home-repairs.html" class="services-card group relative flex-none w-[300px] snap-start bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg" data-index=5>
-                        <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary" style="font-size:48px">handyman</span>
-                        </div>
-                        <div class="p-5 relative">
-                            <h3 class="text-lg font-bold mb-2 text-[#111318]">General Home Repairs</h3>
-                            <p class="text-sm text-[#616f89] leading-relaxed mb-3">Door hanging, window trim, caulking, fixture installs, and all the small jobs that make a big difference.</p>
-                            <span class="inline-flex items-center gap-1 text-primary font-bold text-sm opacity-0 transition-opacity duration-300 group-[.is-active]:opacity-100 group-hover:opacity-100">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
-                        </div>
-                        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none transition-opacity duration-300 group-[.is-active]:opacity-0 group-hover:opacity-0"></div>
-                    </a>
-                </div>
-            </div>
-            <div class="flex items-center justify-between mt-6">
-                <div class="flex items-center gap-3">
-                    <button id=slider-prev class="w-10 h-10 rounded-full border border-[#dbdfe6] flex items-center justify-center text-[#616f89] hover:bg-primary hover:text-white hover:border-primary transition-all" aria-label=Previous>
-                        <span class=material-symbols-outlined>chevron_left</span>
-                    </button>
-                    <button id=slider-next class="w-10 h-10 rounded-full border border-[#dbdfe6] flex items-center justify-center text-[#616f89] hover:bg-primary hover:text-white hover:border-primary transition-all" aria-label=Next>
-                        <span class=material-symbols-outlined>chevron_right</span>
-                    </button>
-                </div>
-                <a class="text-primary font-bold flex items-center gap-1 hover:gap-2 transition-all" href="#services">View All Services <span class=material-symbols-outlined>chevron_right</span></a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="services/handyman-services.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">construction</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Handyman Services</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Fixture installs, minor carpentry, drywall patches, door adjustments, and all the odd jobs on your list — handled in one visit.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/realtor-listing-prep.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">groups</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Realtor & Listing Prep</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Pre-listing repairs, paint touch-ups, inspection fixes, and cosmetic updates to get properties market-ready fast.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/general-home-repairs.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">handyman</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">General Home Repairs</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Door hanging, window trim, caulking, fixture installs, and all the small jobs that make a big difference.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/interior-exterior-painting.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">format_paint</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Interior & Exterior Painting</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Professional painting for every room and exterior surface. Clean lines, lasting finish, meticulous prep work.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/drywall-installation-repair.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">construction</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Drywall Installation & Repair</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">New drywall hanging, patching, skim coating, and seamless finishing for walls and ceilings.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/bathroom-kitchen-refresh.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">countertops</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Bathroom & Kitchen Refresh</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">New fixtures, vanities, backsplashes, and finish work — a full update without a full remodel.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/deck-carpentry.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">deck</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Deck & Carpentry</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Custom deck builds, repairs, staining, and finish carpentry including trim, molding, and built-ins.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/tile-work.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">floor</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Tile Work</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Floor tile, wall tile, backsplashes, and shower surrounds. Precise cuts and professional grouting.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
+                <a href="services/landscaping-yard-maintenance.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg">
+                    <div class="w-full h-44 overflow-hidden service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:48px">local_florist</span></div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold mb-2 text-[#111318]">Landscaping & Yard Maintenance</h3>
+                        <p class="text-sm text-[#616f89] leading-relaxed mb-3">Mulch, garden beds, seasonal cleanups, hedge trimming, and outdoor upkeep to keep your curb appeal sharp.</p>
+                        <span class="inline-flex items-center gap-1 text-primary font-bold text-sm">Learn More <span class="material-symbols-outlined text-sm">chevron_right</span></span>
+                    </div>
+                </a>
             </div>
         </section>
-        <style>
-            .scrollbar-hide::-webkit-scrollbar { display: none }
-            .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none }
-            .services-card { opacity: .7 }
-            .services-card.is-active, .services-card:hover { opacity: 1 }
-        </style>
-        <script>
-            (function() {
-                var e = document.getElementById("services-slider"),
-                    t = document.querySelectorAll(".services-card"),
-                    s = document.getElementById("slider-prev"),
-                    o = document.getElementById("slider-next"),
-                    n = 320;
-                t.forEach(function(e) {
-                    e.addEventListener("mouseenter", function() {
-                        t.forEach(function(e) { e.classList.remove("is-active") }), e.classList.add("is-active")
-                    })
-                }), s.addEventListener("click", function() {
-                    e.scrollBy({ left: -n, behavior: "smooth" })
-                }), o.addEventListener("click", function() {
-                    e.scrollBy({ left: n, behavior: "smooth" })
-                })
-            })()
-        </script>
 
         <!-- HOW IT WORKS -->
         <section class="bg-white py-20">

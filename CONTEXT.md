@@ -16,10 +16,13 @@
 3. General Home Repairs
 4. Interior & Exterior Painting
 5. Drywall Installation & Repair
-6. Bathroom & Kitchen Refresh
-7. Deck & Carpentry
-8. Tile Work
-9. Landscaping & Yard Maintenance
+6. Kitchen Refresh
+7. Bathroom Refresh
+8. Deck & Carpentry
+9. Tile Work
+10. Flooring Installation
+11. Landscaping & Yard Maintenance
+12. Pressure Washing
 
 ## Site Structure
 - index.html — Homepage
@@ -27,7 +30,7 @@
 - components/footer.html — Shared footer (loaded via components.js)
 - js/components.js — Loads header/footer into every page using {{BASE}} path system
 - css/tailwind.css — All site styles
-- services/ — 9 service pages + service-template.html (handyman-services.html, realtor-listing-prep.html, landscaping-yard-maintenance.html + 6 originals)
+- services/ — 12 service pages + service-template.html (kitchen-refresh, bathroom-refresh, flooring-installation, pressure-washing + 8 originals; bathroom-kitchen-refresh.html removed)
 - locations/ — 12 location pages (bethesda, chevy-chase, clarksburg, gaithersburg, germantown, kensington, north-bethesda, olney, potomac, rockville, silver-spring, wheaton)
 - service-areas/index.html — Service areas overview page
 - gallery/index.html — Gallery page
@@ -41,7 +44,7 @@ Header and footer are in components/ folder and injected via fetch().
 
 ## Status
 - Homepage: Complete
-- Service pages: All 9 complete
+- Service pages: All 12 complete
 - Gallery page: Complete (placeholder images)
 - Contact page: Complete
 - Footer: Redesigned with dark #141414 background

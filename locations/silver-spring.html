@@ -19,6 +19,7 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
         .material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
         .service-card-bg { background-color: rgba(196,145,48,0.1); }
+        @media (max-width: 1023px) { .para-constrain { max-width: 100% !important; } }
     </style>
     <script type=application/ld+json>
     {
@@ -39,20 +40,25 @@
         <!-- HERO -->
         <section class="bg-primary/5 py-16 md:py-24">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
-                <div class="flex flex-col gap-6 max-w-3xl">
-                    <div class="flex items-center gap-3">
-                        <a href="../index.html" class="text-[#616f89] text-sm hover:text-primary transition-colors">Home</a>
-                        <span class="text-[#616f89] text-sm">/</span>
-                        <a href="../index.html#service-areas" class="text-[#616f89] text-sm hover:text-primary transition-colors">Service Areas</a>
-                        <span class="text-[#616f89] text-sm">/</span>
-                        <span class="text-primary text-sm font-semibold">Silver Spring</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="flex flex-col gap-6">
+                        <div class="flex items-center gap-3">
+                            <a href="../index.html" class="text-[#616f89] text-sm hover:text-primary transition-colors">Home</a>
+                            <span class="text-[#616f89] text-sm">/</span>
+                            <a href="../service-areas/" class="text-[#616f89] text-sm hover:text-primary transition-colors">Service Areas</a>
+                            <span class="text-[#616f89] text-sm">/</span>
+                            <span class="text-primary text-sm font-semibold">Silver Spring</span>
+                        </div>
+                        <h1 class="text-[#111318] text-4xl md:text-5xl font-black leading-[1.1] tracking-tight">Home Improvement Services<br>in <span class="text-primary">Silver Spring, MD</span></h1>
+                        <p class="text-[#616f89] text-lg leading-relaxed max-w-lg">Licensed, bonded & insured general contractor proudly serving Silver Spring homeowners. MHIC #168342.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="../contact/" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/30 hover:scale-[1.02] transition-transform"><span class="material-symbols-outlined">calendar_today</span> Get Your Free Estimate</a>
+                            <a href="tel:3016138066" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 border-2 border-[#dbdfe6] text-[#111318] text-base font-bold hover:bg-gray-50 transition-colors"><span class="material-symbols-outlined">call</span> Call (301) 613-8066</a>
+                        </div>
                     </div>
-                    <span class="inline-flex items-center gap-2 bg-primary/10 text-primary font-bold text-sm uppercase tracking-widest px-4 py-1.5 rounded-full w-fit"><span class="material-symbols-outlined text-sm">location_on</span> Silver Spring, MD</span>
-                    <h1 class="text-[#111318] text-4xl md:text-5xl font-black leading-[1.1] tracking-tight">Home Improvement Services in <span class="text-primary">Silver Spring, MD</span></h1>
-                    <p class="text-[#616f89] text-lg leading-relaxed">Licensed, bonded & insured general contractor proudly serving Silver Spring homeowners. MHIC #168342.</p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="../contact/" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 bg-primary text-white text-base font-bold shadow-xl shadow-primary/30 hover:scale-[1.02] transition-transform"><span class="material-symbols-outlined">calendar_today</span> Get Your Free Estimate</a>
-                        <a href="tel:3016138066" class="inline-flex items-center justify-center gap-2 rounded-xl h-14 px-8 border-2 border-[#dbdfe6] text-[#111318] text-base font-bold hover:bg-gray-50 transition-colors"><span class="material-symbols-outlined">call</span> Call (301) 613-8066</a>
+                    <div class="relative group">
+                        <div class="absolute -inset-4 bg-primary/10 rounded-3xl rotate-3 group-hover:rotate-1 transition-transform"></div>
+                        <div class="relative w-full aspect-[4/3] rounded-2xl shadow-2xl overflow-hidden placeholder-bg"><div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div></div>
                     </div>
                 </div>
             </div>
@@ -61,8 +67,8 @@
         <!-- INTRO -->
         <section class="max-w-[1280px] mx-auto px-6 lg:px-10 py-20">
             <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block">Local Expertise</span>
-            <h2 class="text-[#111318] text-3xl md:text-4xl font-black mb-6">Your Trusted Home Improvement Partner in Silver Spring</h2>
-            <div class="text-[#616f89] text-base leading-relaxed space-y-4 max-w-4xl">
+            <h2 class="text-[#111318] text-2xl md:text-3xl font-black mb-6">Your Trusted Home Improvement Partner in Silver Spring</h2>
+            <div class="text-[#616f89] text-base leading-relaxed space-y-4 para-constrain" style="max-width:75%">
                 <p>Silver Spring is one of Montgomery County's most diverse and dynamic communities, with a vibrant downtown along Georgia Avenue and Colesville Road and surrounding residential neighborhoods filled with charming bungalows, stately colonials, and mid-century homes. Many of these properties were built in the 1940s through the 1970s, which means they're now reaching the age where paint is peeling, drywall is cracking, fixtures are outdated, and general wear and tear is catching up. Leo General Contracting helps Silver Spring homeowners tackle these projects with quality workmanship and honest pricing — keeping older homes comfortable, functional, and looking their best for years to come.</p>
             </div>
         </section>
@@ -71,8 +77,8 @@
         <section class="bg-white py-20">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
                 <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block">What We Offer</span>
-                <h2 class="text-[#111318] text-3xl md:text-4xl font-black mb-6">Home Improvement Services in Silver Spring</h2>
-                <div class="text-[#616f89] text-base leading-relaxed space-y-4 max-w-4xl">
+                <h2 class="text-[#111318] text-2xl md:text-3xl font-black mb-6">Home Improvement Services in Silver Spring</h2>
+                <div class="text-[#616f89] text-base leading-relaxed space-y-4 para-constrain" style="max-width:75%">
                     <p>Silver Spring's older housing stock means there's always maintenance work to be done. Our <a href="../services/interior-exterior-painting.html" class="text-primary font-semibold hover:underline">interior and exterior painting</a> service is one of the most common requests we get here — refreshing faded siding, repainting trim on mid-century colonials, and giving living spaces a clean, modern feel. For walls damaged by age, settling, or past repairs, our <a href="../services/drywall-installation-repair.html" class="text-primary font-semibold hover:underline">drywall installation and repair</a> team patches cracks, replaces water-damaged sections, and delivers smooth, paint-ready finishes.</p>
                     <p>We also handle the everyday fixes that keep Silver Spring homes running smoothly. Our <a href="../services/general-home-repairs.html" class="text-primary font-semibold hover:underline">general home repairs</a> cover everything from replacing rotted trim boards and fixing stuck doors to repairing damaged siding, while our <a href="../services/handyman-services.html" class="text-primary font-semibold hover:underline">handyman services</a> take care of fixture swaps, shelf installation, caulking, and all the smaller jobs that pile up over the years in an older home.</p>
                 </div>
@@ -106,6 +112,10 @@
                         <span class="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">home</span>
                         <div><h3 class="font-bold text-[#111318] mb-1">Local & Family-Owned</h3><p class="text-sm text-[#616f89]">Based in Montgomery County — we live and work in the communities we serve.</p></div>
                     </div>
+                    <div class="flex items-start gap-4 bg-white rounded-2xl p-6 border border-gray-200">
+                        <span class="material-symbols-outlined text-primary text-2xl shrink-0 mt-0.5">verified_user</span>
+                        <div><h3 class="font-bold text-[#111318] mb-1">Satisfaction Guaranteed</h3><p class="text-sm text-[#616f89]">We're not done until you're happy. Our commitment to quality shows in every job we complete.</p></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -135,16 +145,43 @@
                     <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block">Full Service</span>
                     <h2 class="text-[#111318] text-3xl md:text-4xl font-black">Our Services in Silver Spring</h2>
                 </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <a href="../services/handyman-services.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">construction</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Handyman Services</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/realtor-listing-prep.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">groups</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Realtor & Listing Prep</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/general-home-repairs.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">handyman</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">General Home Repairs</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/interior-exterior-painting.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">format_paint</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Interior & Exterior Painting</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/drywall-installation-repair.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">construction</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Drywall Installation & Repair</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/bathroom-kitchen-refresh.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">countertops</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Bathroom & Kitchen Refresh</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/deck-carpentry.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">deck</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Deck & Carpentry</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/tile-work.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">floor</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Tile Work</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
-                    <a href="../services/landscaping-yard-maintenance.html" class="group bg-white rounded-2xl border border-[#dbdfe6] overflow-hidden transition-all duration-300 hover:border-primary hover:shadow-lg"><div class="w-full h-36 service-card-bg flex items-center justify-center"><span class="material-symbols-outlined text-primary" style="font-size:40px">local_florist</span></div><div class="p-5"><h3 class="text-base font-bold mb-1 text-[#111318]">Landscaping & Yard Maintenance</h3><span class="text-primary font-bold text-sm">Learn More</span></div></a>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="../services/handyman-services.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">construction</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Handyman Services</h3><p class="text-xs text-[#616f89] leading-snug">Fixture installs, minor repairs, and all the small jobs that add up.</p></div>
+                    </a>
+                    <a href="../services/realtor-listing-prep.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">groups</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Realtor & Listing Prep</h3><p class="text-xs text-[#616f89] leading-snug">Pre-listing repairs, paint touch-ups, and inspection fixes on deadline.</p></div>
+                    </a>
+                    <a href="../services/general-home-repairs.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">handyman</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">General Home Repairs</h3><p class="text-xs text-[#616f89] leading-snug">Doors, windows, caulking, and the everyday fixes your home needs.</p></div>
+                    </a>
+                    <a href="../services/interior-exterior-painting.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">format_paint</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Interior & Exterior Painting</h3><p class="text-xs text-[#616f89] leading-snug">Clean lines, meticulous prep, and a lasting finish inside and out.</p></div>
+                    </a>
+                    <a href="../services/drywall-installation-repair.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">construction</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Drywall Installation & Repair</h3><p class="text-xs text-[#616f89] leading-snug">Hanging, patching, skim coating, and seamless texture matching.</p></div>
+                    </a>
+                    <a href="../services/bathroom-kitchen-refresh.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">countertops</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Bathroom & Kitchen Refresh</h3><p class="text-xs text-[#616f89] leading-snug">Vanities, backsplash, fixtures, and finish work — no full remodel needed.</p></div>
+                    </a>
+                    <a href="../services/deck-carpentry.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">deck</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Deck & Carpentry</h3><p class="text-xs text-[#616f89] leading-snug">Deck builds, staining, trim, molding, and custom finish carpentry.</p></div>
+                    </a>
+                    <a href="../services/tile-work.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">floor</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Tile Work</h3><p class="text-xs text-[#616f89] leading-snug">Floors, walls, backsplashes, and shower surrounds with precise cuts.</p></div>
+                    </a>
+                    <a href="../services/landscaping-yard-maintenance.html" class="flex items-center gap-4 bg-white rounded-xl border border-[#dbdfe6] p-4 transition-all duration-300 hover:border-primary hover:shadow-lg">
+                        <div class="shrink-0 w-14 h-14 rounded-md flex items-center justify-center" style="background-color:rgba(196,145,48,0.1)"><span class="material-symbols-outlined text-primary" style="font-size:28px">local_florist</span></div>
+                        <div><h3 class="text-sm font-bold text-[#111318] mb-0.5">Landscaping & Yard Maintenance</h3><p class="text-xs text-[#616f89] leading-snug">Mulch, garden beds, seasonal cleanups, and curb appeal upkeep.</p></div>
+                    </a>
                 </div>
             </div>
         </section>

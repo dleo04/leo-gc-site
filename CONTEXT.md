@@ -28,7 +28,8 @@
 - js/components.js — Loads header/footer into every page using {{BASE}} path system
 - css/tailwind.css — All site styles
 - services/ — 9 service pages + service-template.html (handyman-services.html, realtor-listing-prep.html, landscaping-yard-maintenance.html + 6 originals)
-- locations/ — 7 location pages (potomac.html, rockville.html, north-bethesda.html, bethesda.html, gaithersburg.html, silver-spring.html, chevy-chase.html)
+- locations/ — 12 location pages (bethesda, chevy-chase, clarksburg, gaithersburg, germantown, kensington, north-bethesda, olney, potomac, rockville, silver-spring, wheaton)
+- service-areas/index.html — Service areas overview page
 - gallery/index.html — Gallery page
 - contact/index.html — Contact page
 - images/ — Logo and all site images

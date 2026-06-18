@@ -10,6 +10,7 @@
             .then(function(r) { return r.text(); })
             .then(function(html) {
                 el.innerHTML = html.replace(/\{\{BASE\}\}/g, base);
+                el.style.display = 'contents';
                 return el;
             });
     }

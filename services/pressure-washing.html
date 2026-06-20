@@ -18,6 +18,7 @@
         .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
         .material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24 }
         .placeholder-bg { background-color: #141414; background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(196,145,48,0.08) 35px, rgba(196,145,48,0.08) 36px); }
+        @media(max-width:1023px){.hero-reorder{display:contents}.hero-reorder>*{order:1}.hero-reorder>:first-child{order:-1}}
     </style>
     <script type=application/ld+json>
     {
@@ -37,8 +38,8 @@
         <!-- HERO -->
         <section class="bg-primary/5 py-16 md:py-24">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="flex flex-col gap-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
+                    <div class="flex flex-col gap-6 hero-reorder">
                         <div class="flex items-center gap-3">
                             <a href="../index.html" class="text-[#616f89] text-sm hover:text-primary transition-colors">Home</a>
                             <span class="text-[#616f89] text-sm">/</span>

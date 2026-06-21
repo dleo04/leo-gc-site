@@ -629,7 +629,8 @@
                     <p class="text-white/80 text-lg max-w-xl mx-auto">Get a free estimate for your home improvement project. Licensed, bonded & insured — MHIC #168342.</p>
                 </div>
                 <div class="max-w-2xl mx-auto bg-white rounded-2xl shadow-2xl p-10 md:p-12">
-                    <form id=contact-form class="space-y-5" onsubmit="return false;">
+                    <form id="contact-form" class="space-y-5" name="estimate-request" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="estimate-request">
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-sm font-semibold text-[#111318] mb-1">First Name</label>
@@ -672,6 +673,11 @@
                             <span class=material-symbols-outlined>calendar_today</span> Request Free Estimate
                         </button>
                     </form>
+                    <div id="form-success" class="hidden text-center py-12">
+                        <span class="material-symbols-outlined text-primary text-5xl mb-4 block">check_circle</span>
+                        <h3 class="text-[#111318] text-2xl font-black mb-2">Thank You!</h3>
+                        <p class="text-[#616f89] text-base">Your request has been received. We'll be in touch within 24 hours.</p>
+                    </div>
                 </div>
                 <p class="text-center text-white/80 mt-6">Or call us directly:
                     <a href=tel:3016138066 class="text-white font-bold hover:underline">(301) 613-8066</a>
@@ -684,6 +690,15 @@
     <script>window.LGC_BASE = './';</script>
     <script src="js/components.js"></script>
     <script src="js/main.js"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = this;
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() })
+        .then(function(res) { if (res.ok) { form.classList.add('hidden'); document.getElementById('form-success').classList.remove('hidden'); } else { alert('Something went wrong. Please call us at (301) 613-8066.'); } })
+        .catch(function() { alert('Something went wrong. Please call us at (301) 613-8066.'); });
+    });
+    </script>
 </body>
 
 </html>

@@ -41,93 +41,129 @@
             <!-- Filter Buttons -->
             <div class="flex flex-wrap justify-center gap-3 mb-12">
                 <button class="filter-btn active rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] transition-all hover:border-primary hover:text-primary" data-filter="all">All</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="handyman">Handyman</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="realtor">Realtor & Listing Prep</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="repairs">General Repairs</button>
                 <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="painting">Painting</button>
                 <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="drywall">Drywall</button>
-                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="bathroom-kitchen">Bathroom & Kitchen</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="kitchen">Kitchen</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="bathroom">Bathroom</button>
                 <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="deck-carpentry">Deck & Carpentry</button>
                 <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="tile">Tile Work</button>
-                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="repairs">General Repairs</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="flooring">Flooring</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="landscaping">Landscaping</button>
+                <button class="filter-btn rounded-full px-5 py-2 text-sm font-bold border border-[#dbdfe6] text-[#616f89] transition-all hover:border-primary hover:text-primary" data-filter="pressure-washing">Pressure Washing</button>
             </div>
 
             <!-- Gallery Grid -->
             <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <!-- Painting (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="0" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Interior Painting — Living Room</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                <!-- Handyman (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="handyman" aria-label="View project">
+                    <img src="../images/handymanfan.jpg" alt="Ceiling fan installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Ceiling fan installation</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="1" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Exterior Siding Repaint</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="handyman" aria-label="View project">
+                    <img src="../images/handymanshelf.jpg" alt="Shelf and bracket mount" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Shelf and bracket mount</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" data-index="2" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Cabinet Painting — Kitchen</p><span class="text-primary/80 text-xs font-bold uppercase">Painting</span></div>
+                <!-- Realtor & Listing Prep (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="realtor" aria-label="View project">
+                    <img src="../images/realtorpaint.jpg" alt="Pre-listing paint refresh" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Pre-listing paint refresh</p></div>
                 </button>
-                <!-- Drywall (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="3" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Basement Drywall Finish</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="realtor" aria-label="View project">
+                    <img src="../images/realtorwash.jpg" alt="Curb appeal touch-up" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Curb appeal touch-up</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="4" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Water Damage Repair</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                <!-- General Repairs (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" aria-label="View project">
+                    <img src="../images/repairsdoor.jpg" alt="Door replacement" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Door replacement</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" data-index="5" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Skim Coat & Texture Match</p><span class="text-primary/80 text-xs font-bold uppercase">Drywall</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" aria-label="View project">
+                    <img src="../images/repairswindow.jpg" alt="Window weatherproofing" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Window weatherproofing</p></div>
                 </button>
-                <!-- Bathroom & Kitchen (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="6" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Vanity & Mirror Upgrade</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                <!-- Painting (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" aria-label="View project">
+                    <img src="../images/paintingliving.jpg" alt="Living room interior painting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Living room interior</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="7" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Kitchen Backsplash Install</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="painting" aria-label="View project">
+                    <img src="../images/paintingsiding.jpg" alt="Exterior siding repaint" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Exterior siding repaint</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom-kitchen" data-index="8" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Fixture & Hardware Refresh</p><span class="text-primary/80 text-xs font-bold uppercase">Bathroom & Kitchen</span></div>
+                <!-- Drywall (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" aria-label="View project">
+                    <img src="../images/drywallbasement.jpg" alt="Basement drywall installation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Basement drywall installation</p></div>
                 </button>
-                <!-- Deck & Carpentry (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="9" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">New Composite Deck Build</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="drywall" aria-label="View project">
+                    <img src="../images/drywallwater.jpg" alt="Water damage drywall repair" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Water damage repair</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="10" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Crown Molding Installation</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                <!-- Kitchen (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="kitchen" aria-label="View project">
+                    <img src="../images/kitchencabinet.jpg" alt="Cabinet painting" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Cabinet painting</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" data-index="11" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Deck Staining & Sealing</p><span class="text-primary/80 text-xs font-bold uppercase">Deck & Carpentry</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="kitchen" aria-label="View project">
+                    <img src="../images/kitchenbacksplash.jpg" alt="Backsplash install" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Backsplash install</p></div>
                 </button>
-                <!-- Tile Work (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="12" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Bathroom Floor Tile</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                <!-- Bathroom (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom" aria-label="View project">
+                    <img src="../images/bathroomvanity.jpg" alt="Vanity swap" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Vanity swap</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="13" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Shower Surround Install</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="bathroom" aria-label="View project">
+                    <img src="../images/bathroomtile.jpg" alt="Tile surround" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Tile surround</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" data-index="14" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Herringbone Backsplash</p><span class="text-primary/80 text-xs font-bold uppercase">Tile Work</span></div>
+                <!-- Deck & Carpentry (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" aria-label="View project">
+                    <img src="../images/decknew.jpg" alt="New composite deck" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">New composite deck</p></div>
                 </button>
-                <!-- General Repairs (3) -->
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="15" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Door Replacement</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="deck-carpentry" aria-label="View project">
+                    <img src="../images/deckcrown.jpg" alt="Crown molding install" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Crown molding install</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="16" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Window Weatherproofing</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                <!-- Tile Work (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" aria-label="View project">
+                    <img src="../images/tilebathroom.jpg" alt="Bathroom floor tile" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Bathroom floor tile</p></div>
                 </button>
-                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="repairs" data-index="17" aria-label="View project">
-                    <div class="w-full h-full placeholder-bg group-hover:scale-110 transition-transform duration-500"></div>
-                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Railing & Fixture Repair</p><span class="text-primary/80 text-xs font-bold uppercase">General Repairs</span></div>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="tile" aria-label="View project">
+                    <img src="../images/tileshower.jpg" alt="Walk-in shower surround" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Walk-in shower surround</p></div>
+                </button>
+                <!-- Flooring (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="flooring" aria-label="View project">
+                    <img src="../images/floorhardwood.jpg" alt="Hardwood install" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Hardwood install</p></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="flooring" aria-label="View project">
+                    <img src="../images/floorcarpet.jpg" alt="Carpet replacement" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Carpet replacement</p></div>
+                </button>
+                <!-- Landscaping (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="landscaping" aria-label="View project">
+                    <img src="../images/yardmulch.jpg" alt="Mulch bed refresh" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Mulch bed refresh</p></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="landscaping" aria-label="View project">
+                    <img src="../images/yardtrim.jpg" alt="Hedge trimming" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Hedge trimming</p></div>
+                </button>
+                <!-- Pressure Washing (2) -->
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="pressure-washing" aria-label="View project">
+                    <img src="../images/washdriveway.jpg" alt="Driveway cleaning" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Driveway cleaning</p></div>
+                </button>
+                <button class="gallery-item group relative aspect-square rounded-xl overflow-hidden cursor-pointer border border-gray-200 hover:border-primary transition-all focus:outline-none focus:ring-2 focus:ring-primary" data-category="pressure-washing" aria-label="View project">
+                    <img src="../images/washdeck.jpg" alt="Deck cleaning" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity"><p class="text-white text-sm font-medium">Deck cleaning</p></div>
                 </button>
             </div>
         </section>
@@ -144,7 +180,7 @@
                 <span class="material-symbols-outlined text-4xl">chevron_right</span>
             </button>
             <div class="max-w-5xl max-h-[90vh] mx-4" onclick="event.stopPropagation()">
-                <div id="gallery-lightbox-img" class="w-full placeholder-bg rounded-lg" style="width:800px;max-width:90vw;height:600px;max-height:70vh"></div>
+                <img id="gallery-lightbox-img" class="rounded-lg" style="max-width:90vw;max-height:70vh" src="" alt="">
                 <p id="gallery-lightbox-caption" class="text-white text-center mt-4 text-sm"></p>
             </div>
         </div>
@@ -152,15 +188,9 @@
         <script>
         (function() {
             var items = document.querySelectorAll('.gallery-item');
-            var captions = [];
-            items.forEach(function(el) {
-                captions.push(el.querySelector('.text-white.text-sm').textContent);
-            });
-
             var currentIndex = 0;
             var visibleItems = Array.from(items);
 
-            // Filter
             document.querySelectorAll('.filter-btn').forEach(function(btn) {
                 btn.addEventListener('click', function() {
                     document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -177,7 +207,6 @@
                 });
             });
 
-            // Lightbox
             items.forEach(function(el) {
                 el.addEventListener('click', function() {
                     var idx = visibleItems.indexOf(el);
@@ -210,7 +239,11 @@
             }
             function updateLightbox() {
                 var el = visibleItems[currentIndex];
+                var img = el ? el.querySelector('img') : null;
                 var caption = el ? el.querySelector('.text-white.text-sm').textContent : '';
+                var lbImg = document.getElementById('gallery-lightbox-img');
+                lbImg.src = img ? img.src : '';
+                lbImg.alt = caption;
                 document.getElementById('gallery-lightbox-caption').textContent = caption;
             }
 

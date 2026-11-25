@@ -2993,3 +2993,11 @@ body {
     padding-bottom: 1.25rem;
   }
 }
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[560px\] {
+  width: 560px;
+}

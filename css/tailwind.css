@@ -3001,3 +3001,18 @@ body {
 .w-\[310px\] {
   width: 310px;
 }
+
+/* Location cards: flex-wrap so a partial last row centers.
+   Widths mirror the old 2/3/4/5-column grid with a 0.75rem gap. */
+.loc-cards > * {
+  width: calc((100% - 0.75rem) / 2);
+}
+@media (min-width: 640px) {
+  .loc-cards > * { width: calc((100% - 1.5rem) / 3); }
+}
+@media (min-width: 768px) {
+  .loc-cards > * { width: calc((100% - 2.25rem) / 4); }
+}
+@media (min-width: 1024px) {
+  .loc-cards > * { width: calc((100% - 3rem) / 5); }
+}

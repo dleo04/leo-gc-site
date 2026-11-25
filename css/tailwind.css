@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
 
 *,
 :after,
@@ -2979,7 +2979,8 @@ th):not(:where([class~=not-prose],
 
 /* Heading font */
 h1, h2, h3 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.01em;
 }
 
 body {

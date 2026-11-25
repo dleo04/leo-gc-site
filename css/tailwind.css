@@ -2986,3 +2986,10 @@ h1, h2, h3 {
 body {
   font-family: 'Work Sans', sans-serif;
 }
+
+@media (min-width: 1024px) {
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}

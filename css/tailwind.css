@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap');
+
 *,
 :after,
 :before {
@@ -2973,4 +2975,13 @@ th):not(:where([class~=not-prose],
         padding-left: 2.5rem;
         padding-right: 2.5rem
     }
+}
+
+/* Heading font */
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
 }

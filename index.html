@@ -110,7 +110,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="flex flex-col gap-8 order-2 lg:order-1">
                     <div class="flex flex-col gap-4">
-                        <span class="inline-flex items-center gap-2 bg-primary/10 text-primary font-bold text-sm uppercase tracking-widest px-4 py-1.5 rounded-full"><span class="material-symbols-outlined text-sm">verified_user</span> Licensed, Bonded & Insured</span>
+                        <span class="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest"><span class="material-symbols-outlined text-sm">verified_user</span> Licensed, Bonded & Insured</span>
                         <h1 class="text-[#111318] text-4xl md:text-6xl font-black leading-[1.1] tracking-tight">Quality Home Improvement in <span class=text-primary>Montgomery County</span></h1>
                         <p class="text-[#616f89] text-lg md:text-xl font-normal leading-relaxed max-w-lg">From painting and drywall to bathroom refreshes and deck builds, Leo General Contracting delivers expert craftsmanship you can trust. Proudly serving Montgomery County and surrounding Maryland communities. <strong>MHIC #168342</strong>.</p>
                     </div>
@@ -128,7 +128,6 @@
                 </div>
                 <div class="order-1 lg:order-2">
                     <div class="relative group">
-                        <div class="absolute -inset-4 bg-primary/10 rounded-3xl rotate-3 group-hover:rotate-1 transition-transform"></div>
                         <div class="relative w-full aspect-[4/3] rounded-2xl shadow-2xl overflow-hidden">
                             <img src="images/indexpagemain.webp" alt="Leo General Contracting home improvement project" class="w-full h-full object-cover">
                         </div>
@@ -365,7 +364,7 @@
         </section>
 
         <!-- TRUST / CREDENTIALS STRIP -->
-        <section class="bg-primary/5 py-16">
+        <section class="py-16">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
                 <div class="text-center mb-12">
                     <h2 class="text-[#111318] text-3xl md:text-4xl font-black mb-4">Why Choose <span class=text-primary>Leo General Contracting</span></h2>
@@ -396,7 +395,7 @@
         </section>
 
         <!-- SERVICE AREAS -->
-        <section id=service-areas class="bg-background-light py-24">
+        <section id=service-areas class="py-24">
             <div class="max-w-[1280px] mx-auto px-6 lg:px-10">
                 <div class="text-center mb-12">
                     <span class="text-primary font-bold tracking-widest text-sm uppercase mb-3 block">Local Service</span>
@@ -673,6 +672,10 @@
                                 <option>Pressure Washing</option>
                                 <option>Other</option>
                             </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-[#111318] mb-2">Project Address</label>
+                            <input type=text name=address class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:ring-2 focus:ring-primary focus:border-primary" placeholder="Street address or city">
                         </div>
                         <div>
                             <label class="block text-sm font-semibold text-[#111318] mb-2">Project Details</label>

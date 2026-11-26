@@ -15,6 +15,23 @@
             });
     }
 
+    // Faded fixed backdrop (css/tailwind.css → body::before). Load the image only after the
+    // page has loaded and the browser is idle, so it never delays the main content; once it
+    // has loaded, html.bg-ready shows it. Skipped with reduced data; on error nothing changes.
+    function loadBackdrop() {
+        if (window.matchMedia('(prefers-reduced-data: reduce)').matches) return;
+        var portrait = window.matchMedia('(orientation: portrait)').matches;
+        var img = new Image();
+        img.onload = function() { document.documentElement.classList.add('bg-ready'); };
+        img.src = base + 'images/' + (portrait ? 'rockville-bg-portrait.webp' : 'rockville-bg.webp');
+    }
+    function startBackdrop() {
+        if ('requestIdleCallback' in window) requestIdleCallback(loadBackdrop, { timeout: 2000 });
+        else setTimeout(loadBackdrop, 200);
+    }
+    if (document.readyState === 'complete') startBackdrop();
+    else window.addEventListener('load', startBackdrop, { once: true });
+
     var headerReady = injectComponent(base + 'components/header.html', 'site-header');
     var footerReady = injectComponent(base + 'components/footer.html', 'site-footer');
 

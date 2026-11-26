@@ -3022,3 +3022,51 @@ body {
 @media (min-width: 1024px) {
   .loc-cards > * { width: calc((100% - 3rem) / 5); }
 }
+
+/* ---- Fixed site backdrop (faded aerial photo of Rockville) ----
+   A position:fixed pseudo-element behind all content (no background-attachment: fixed,
+   which iOS Safari ignores). The layer is opaque: a 63% white overlay over the photo, so
+   the photo shows at 37%. js/components.js preloads the image after page load and then adds
+   html.bg-ready, which fades the layer in and makes the solid light page sections
+   transparent so the photo shows through. Cards, inputs, header, footer, gold bands and
+   the 5% gold-tint sections keep their own backgrounds. No JS / image error: unchanged. */
+:root { --backdrop-veil: rgb(255 255 255 / 0.63); }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  height: 100lvh;            /* iOS: cover the large viewport so no gap shows when the toolbar collapses */
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+  will-change: transform;    /* own compositing layer: never repainted while scrolling */
+  transition: opacity .5s ease;
+}
+/* The image URL only applies once .bg-ready is set, so it is never fetched early. */
+html.bg-ready body::before {
+  opacity: 1;
+  background:
+    linear-gradient(var(--backdrop-veil), var(--backdrop-veil)),
+    url("../images/rockville-bg.webp") center 5% / cover no-repeat;
+}
+@media (orientation: portrait) {
+  html.bg-ready body::before {
+    background:
+      linear-gradient(var(--backdrop-veil), var(--backdrop-veil)),
+      url("../images/rockville-bg-portrait.webp") center / cover no-repeat;
+  }
+}
+html.bg-ready main > section.bg-white,
+html.bg-ready main > section.bg-background-light { background-color: transparent; }
+/* Body-copy grey one step darker while the backdrop shows: keeps >= 4.5:1 over the darkest
+   part of the photo, including inside the 5% gold-tint sections. */
+html.bg-ready main .text-\[\#616f89\] { color: #2d3142; }
+@media (prefers-reduced-motion: reduce) { body::before { transition: none; } }
+@media print, (forced-colors: active) {
+  body::before { display: none; }
+  html.bg-ready main > section.bg-white,
+  html.bg-ready main > section.bg-background-light { background-color: #fff; }
+}

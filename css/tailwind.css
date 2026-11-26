@@ -1811,6 +1811,10 @@ tfoot td:last-child):not(:where([class~=not-prose],
     max-width: 48rem
 }
 
+.max-w-4xl {
+    max-width: 56rem
+}
+
 .max-w-5xl {
     max-width: 64rem
 }
@@ -3061,12 +3065,17 @@ html.bg-ready body::before {
 }
 html.bg-ready main > section.bg-white,
 html.bg-ready main > section.bg-background-light { background-color: transparent; }
-/* Body-copy grey one step darker while the backdrop shows: keeps >= 4.5:1 over the darkest
-   part of the photo, including inside the 5% gold-tint sections. */
-html.bg-ready main .text-\[\#616f89\] { color: #2d3142; }
+/* Body-copy grey becomes near-black (#111827) while the backdrop shows, for strong contrast
+   over the photo. */
+html.bg-ready main .text-\[\#616f89\] { color: #111827; }
 @media (prefers-reduced-motion: reduce) { body::before { transition: none; } }
 @media print, (forced-colors: active) {
   body::before { display: none; }
   html.bg-ready main > section.bg-white,
   html.bg-ready main > section.bg-background-light { background-color: #fff; }
 }
+
+/* Callout card accent: thick gold left edge (added by hand; no Tailwind build step) */
+.border-l-4 { border-left-width: 4px; }
+.border-l-primary { border-left-color: #C49130; }
+

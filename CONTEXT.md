@@ -4,7 +4,7 @@
 - Name: Leo General Contracting LLC
 - Phone: (301) 613-8066
 - Email: leogeneralcontracting@gmail.com
-- MHIC License: #168342 — Licensed, Bonded & Insured
+- MHIC License: #168619 — Licensed, Bonded & Insured
 - Location: Silver Spring / Rockville, MD
 - Target market: Potomac, North Bethesda, Bethesda, Rockville, Gaithersburg, Silver Spring, Chevy Chase MD
 - Brand colors: Gold #C49130 | Black #141414 | White #FFFFFF
